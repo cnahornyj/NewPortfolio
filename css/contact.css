@@ -1,0 +1,180 @@
+/* Styles généraux */
+/* Importation de la police Poppins depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Utilisation de la police dans les styles */
+body, .header, .navbar, .nav-links a, .hero h1, .hero p, .cta-button, .footer, .contact-form h2, .contact-form label {
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+}
+
+/* Augmenter l'espacement entre les mots */
+.hero h1, .hero p {
+    word-spacing: 2.5px; /* Ajustez la valeur selon votre préférence */
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: rgb(55,62,69);
+background: linear-gradient(rgba(55,62,69,1) 0%, rgba(99,99,125,1) 15%, rgba(55,62,69,1) 100%);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Occupe 100% de la hauteur de l'écran */
+}
+
+.header {
+    color: #636F7D;
+    padding: 30px 70px;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.hero {
+    color: #696969;
+    /*padding: 100px 20px;*/
+    text-align: center;
+    flex-grow: 1; /* Permet à la section de prendre l'espace restant */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    color: whitesmoke;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    line-height: 25px;
+}
+
+.button-container {
+    text-align: center; /* Centrage horizontal */
+}
+
+.discover-button {
+    padding: 10px 20px; /* Rembourrage du bouton */
+    font-size: 1em; /* Taille de la police */
+    background-color: whitesmoke; /* Couleur de fond du bouton */
+    color: #333; /* Couleur du texte */
+    border: 1px solid whitesmoke; 
+    border-radius: 50px; /* Arrondi des coins */
+    cursor: pointer; /* Curseur au survol */
+    transition-duration: 500ms;
+}
+
+.discover-button:hover {
+  background-color: whitesmoke; /* Couleur de fond du bouton */
+  border: 1px solid white;
+  color: #333;
+}
+
+.contact-form {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    align-self: flex-start;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #636F7D;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #636F7D;
+    color: whitesmoke;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #505d6b;
+}
+
+.footer {
+    color: #333333;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > img {
+  width: 25px;
+  padding: 0 5px;
+}

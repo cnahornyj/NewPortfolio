@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Contact</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <style>
+        .valid {
+            color: black !important;
+            background: #E8F0FE !important;
+          /* Couleur de bordure verte pour les champs validés */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Clara NAHORNYJ</div>
+            <ul class="nav-links">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Contactez-moi</h1>
+            <p>N'hésitez pas à me contacter pour toute question ou demande de projet.</p>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <form action="../php/send_mail.php" method="POST">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required onfocusout="validateInput(this)">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required onfocusout="validateInput(this)">
+            
+            <label for="subject">Objet</label>
+            <input type="text" id="subject" name="subject" required onfocusout="validateInput(this)">
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required onfocusout="validateInput(this)"></textarea>
+            
+            <button type="submit" class="submit-button">Envoyer</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+        <img src='https://blog.waalaxy.com/wp-content/uploads/2021/01/index.png'/>
+        <img src='https://i.pinimg.com/originals/48/e0/73/48e07378e01dd719c060c1f2f2b5cb00.png'/>
+    </footer>
+
+    <script>
+        function validateInput(element) {
+            if (element.value.trim() !== "") {
+                element.classList.add('valid');
+            } else {
+                element.classList.remove('valid');
+            }
+        }
+    </script>
+</body>
+</html>
