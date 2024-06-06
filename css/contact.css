@@ -81,7 +81,7 @@ background: linear-gradient(rgba(55,62,69,1) 0%, rgba(99,99,125,1) 15%, rgba(55,
 }
 
 .hero p {
-    font-size: 1.2em;
+    width: 300px;
     line-height: 25px;
 }
 
@@ -106,8 +106,15 @@ background: linear-gradient(rgba(55,62,69,1) 0%, rgba(99,99,125,1) 15%, rgba(55,
   color: #333;
 }
 
+
+form {
+    background: #33333369;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
 .contact-form {
-    padding: 50px 20px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -120,7 +127,7 @@ background: linear-gradient(rgba(55,62,69,1) 0%, rgba(99,99,125,1) 15%, rgba(55,
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 600px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -136,10 +143,10 @@ background: linear-gradient(rgba(55,62,69,1) 0%, rgba(99,99,125,1) 15%, rgba(55,
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #46465c;
+    background: #828699;
     border-radius: 5px;
     font-size: 1em;
-    background-color: transparent;
     color: white;
     font-weight: bold;
 }
@@ -153,8 +160,8 @@ background: linear-gradient(rgba(55,62,69,1) 0%, rgba(99,99,125,1) 15%, rgba(55,
 .submit-button {
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #636F7D;
-    color: whitesmoke;
+    background: whitesmoke;
+    color: #636F7D;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -162,7 +169,8 @@ background: linear-gradient(rgba(55,62,69,1) 0%, rgba(99,99,125,1) 15%, rgba(55,
 }
 
 .submit-button:hover {
-    background-color: #505d6b;
+    background-color: #333;
+    color: whitesmoke;
 }
 
 .footer {
@@ -174,7 +182,7 @@ background: linear-gradient(rgba(55,62,69,1) 0%, rgba(99,99,125,1) 15%, rgba(55,
     align-items: center;
 }
 
-footer > img {
-  width: 25px;
-  padding: 0 5px;
+footer > a > img {
+    width: 25px;
+    padding: 0 2.5px;
 }

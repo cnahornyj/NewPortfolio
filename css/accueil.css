@@ -105,14 +105,18 @@ background: radial-gradient(circle, rgba(55,62,69,1) 0%, rgba(99,99,125,1) 50%, 
 }
 
 .discover-button:hover {
-  background-color: whitesmoke; /* Couleur de fond du bouton */
-  border: 1px solid white;
-  color: #333;
+  background-color: #333; /* Couleur de fond du bouton */
+  border: 1px solid #333;
+  color: whitesmoke;
 }
 
 .discover-button a {
     text-decoration: none;
     color: #333;
+}
+
+.discover-button a:hover {
+    color: whitesmoke;
 }
 
 .footer {
@@ -124,7 +128,7 @@ background: radial-gradient(circle, rgba(55,62,69,1) 0%, rgba(99,99,125,1) 50%, 
     align-items: center;
 }
 
-footer > img {
+footer > a > img {
   width: 25px;
-  padding: 0 5px;
+  padding: 0 2.5px;
 }

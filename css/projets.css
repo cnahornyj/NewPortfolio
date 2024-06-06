@@ -17,7 +17,7 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
    background: rgb(55,62,69);
-background: linear-gradient(rgba(55,62,69,1) 0%, rgba(99,99,125,1) 30%, rgba(55,62,69,1) 100%);
+background: linear-gradient(rgba(55,62,69,1) 0%, rgba(99,99,125,1) 25%, rgba(55,62,69,1) 100%);
     color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -239,13 +239,13 @@ background: linear-gradient(rgba(55,62,69,1) 0%, rgba(99,99,125,1) 30%, rgba(55,
 .footer {
     color: #333333;
     text-align: center;
-    padding: 20px 0;
+    padding: 60px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer > img {
-  width: 25px;
-  padding: 0 5px;
+footer > a > img {
+    width: 25px;
+    padding: 0 2.5px;
 }
