@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de contact de Clara NAHORNYJ</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="contact">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <span class="company-name">Clara NAHORNYJ</span>
+            </div>
+            <div class="navbar-right">
+                <a href="index.html">Accueil</a>
+                <a href="realisations.html">Réalisations</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <a href="index.html">Accueil</a>
+            <a href="realisations.html">Réalisations</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <section class="contact">
+    <h1>Contactez-moi</h1>
+    <section class="contact-form">
+        <form name="contact" netlify>
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required onfocusout="validateInput(this)">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required onfocusout="validateInput(this)">
+            
+            <label for="subject">Objet</label>
+            <input type="text" id="subject" name="subject" required onfocusout="validateInput(this)">
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required onfocusout="validateInput(this)"></textarea>
+            
+            <button type="submit" class="submit-button">Envoyer</button>
+        </form>
+    </section>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+        <a href="https://www.linkedin.com/in/claranahornyj/" target="_blank"><img src='../assets/linkedin_dark_icon.png'/></a>
+        <a href="https://github.com/cnahornyj" target="_blank"><img src='../assets/github_dark_icon.png'/></a>
+    </footer>
+
+    <script src="../js/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+/* Importation de la police Poppins depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Raleway', Arial, sans-serif;
+    background: rgb(55,62,69);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Occupe 100% de la hauteur de l'écran */
+}
+
+#accueil {
+    background: radial-gradient(circle, rgba(55,62,69,1) 0%, black 50%, rgba(55,62,69,1) 100%);
+}
+
+#realisations, #contact {
+    background: linear-gradient(rgba(55,62,69,1) 0%, black 50%, rgba(55,62,69,1) 100%);
+}
+
+/* Barre de navigation */
+
+.navbar {
+    color: white;
+    padding: 30px 200px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-name {
+    font-size: 1.5em;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+}
+
+.dropdown-menu a {
+    color: white;
+    background: #32383F;
+    z-index: 2;
+    padding: 10px 60px;
+    text-decoration: none;
+}
+
+.dropdown-menu a:first-child {
+    border-bottom: 1px solid whitesmoke;
+}
+.dropdown-menu a:nth-child(2) {
+    border-bottom: 1px solid whitesmoke;
+}
+
+.dropdown-menu a:hover {
+    background-color: #333;
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 10px 50px;
+    }
+    .myprojects {
+        padding: 10px 50px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar-container {
+        padding: 0 10px;
+    }
+
+    .navbar-right {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .dropdown-menu.show {
+        display: flex;
+    }
+    .card {
+        margin-top: 30px !important;
+    }
+}
+
+@media (max-width: 720px) {
+    .project-cards {
+        justify-content: center !important;
+    }
+}
+
+/* Page d'accueil */
+
+.hero {
+    color: #696969;
+    padding: 100px 20px;
+    text-align: center;
+    flex-grow: 1; /* Permet à la section de prendre l'espace restant */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    color: whitesmoke;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+
+.button-container {
+    text-align: center; /* Centrage horizontal */
+}
+
+.discover-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: whitesmoke;
+    color: #636F7D;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.discover-button:hover {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+.discover-button a {
+    text-decoration: none;
+    color: #333;
+}
+
+.discover-button a:hover {
+    color: whitesmoke;
+}
+
+/* Page Mes réalisations */ 
+
+.myprojects {
+    padding: 50px 200px;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #33333369;
+    color: whitesmoke;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+     object-fit: cover;
+    filter: saturate(0.5);
+    transition: 1s; 
+}
+
+.card img:hover {
+    filter: saturate(0.8);
+}
+
+.card-info {
+    padding: 20px;  
+}
+
+.card-info h2 {
+    margin-bottom: 10px;
+}
+
+.card-info p {
+    margin-bottom: 20px;
+}
+
+.card-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.card-info a:hover {
+    text-decoration: underline;
+}
+
+/* Ajoutez ceci à votre fichier styles.css */
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-button {
+    background-color: whitesmoke;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 25px;
+    padding: 5px 10px;
+    transition-duration: 500ms;
+}
+
+.right-button {
+    background-color: whitesmoke;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 25px;
+    padding: 5px 10px;
+    transition-duration: 500ms;
+}
+
+.left-button:hover {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+.right-button:hover {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+/* CSS pour l'effet de flou */
+.blur {
+    filter: blur(5px);
+}
+
+/* Page contact */
+
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+form {
+    background: #33333369;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.contact-form {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    align-self: flex-start;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #46465c;
+    background: #828699;
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #636F7D;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: whitesmoke;
+    color: #636F7D;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+/* Footer */
+
+.footer {
+    color: #333333;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > a > img {
+  width: 25px;
+  padding: 0 2.5px;
+}
